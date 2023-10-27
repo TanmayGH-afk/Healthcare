@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    tools:context=".BuyMedicineBookActivity">
+
+    <TextView
+        android:id="@+id/textViewOrderdetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="24/7 Healthcare"
+        android:textColor="#14FFFF"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.065" />
+
+    <TextView
+        android:id="@+id/textViewBookOrderDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please fill all the details for booking"
+        android:textColor="#14FFFF"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.175" />
+
+    <EditText
+        android:id="@+id/editTextFNBookCheckout"
+        android:layout_width="274dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Full Name"
+        app:layout_constraintBottom_toTopOf="@+id/editTextAddressBookCheckout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBookOrderDetail"
+        app:layout_constraintVertical_bias="0.824" />
+
+    <EditText
+        android:id="@+id/editTextPincodeBookCheckout"
+        android:layout_width="272dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="48dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Pincode"
+        app:layout_constraintBottom_toTopOf="@+id/editTextContactBookCheckout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextContactBookCheckout"
+        android:layout_width="287dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="44dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Contact Number"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBuyBookCheckout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextAddressBookCheckout"
+        android:layout_width="271dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="56dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Address"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPincodeBookCheckout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonBuyBookCheckout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="140dp"
+        android:text="BOOK"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
